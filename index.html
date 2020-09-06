@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+
+    <input id="text" />
+    <button onclick="verify(document.getElementById('text').value)">Verificar palabra</button>
+    <p id="result"></p>
+    <script>
+        function verify(text){
+            if(text === text.split("").reverse().join(""))
+                document.getElementById("result").innerHTML = "Es una palabra palíndromo "
+            else
+                document.getElementById("result").innerHTML =  "No Es una palabra palíndromo "
+        }
+    </script>
+</body>
+</html>
